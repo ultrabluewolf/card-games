@@ -1,0 +1,45 @@
+BS Card Game
+
+Entire Deck shuffled and passed out to at least 3 players
+
+Random player goes first; supposibly discards at least one Ace
+Next player in clockwise order supposible discardts at least one 2
+..
+after King, the order restarts with Ace
+
+Anytime after a player discards cards and before the next player goes, anyone can call out the player
+
+if the player lied, they take the deck of discarded cards
+otherwise, the other player who called out BS, takes the deck
+
+--
+goal:
+discard entire hand
+
+hands and deck are kept secret from all other players.
+
+strategy:
+For some player A and B from the set of players where size>=3:
+A discards m cards. B with n amount of card type i, player A can determine whether to call out B:
+ n=4, BS always; 
+ n=3, m>1=>BS;
+ n=2, m>2=>BS;
+ n=1, m>3=>BS
+ 
+--
+
+python AI libraries: http://wiki.python.org/moin/PythonForArtificialIntelligence
+PyBrain
+aima
+
+--
+
+ideas:
+perhaps eventually make an android app?
+could include video conferencing when playing with friends?
+
+--
+
+note:
+rbtree
+python-dev and perhaps cython?
